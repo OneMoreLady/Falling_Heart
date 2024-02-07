@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="falling_heart_2.css">
+    <title>Púrrusito</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">Hola, Púrrusito</h1>
+        <p>Quería decirte que me haces muy feliz, cada día. Y qué siento muchísimo por ti, bastante. No lo despojaría en naciente próspero, te lo daría, y te amaría hasta el fin de nuestras vidas.</p>
+        <span>¡Gracias por coincidir conmigo!</span>
+    </div>
+</body>
+
+<script>
+    function hearts(){
+        
+    const container = document.querySelector('.container');
+
+    const creat = document.createElement('div');
+    creat.classList.add('hearts');
+    creat.innerHTML = '❤️';
+
+    creat.style.left = Math.random() * 100 + 'vw';
+    creat.style.animationDuration = Math.random()* 2 + 3 + 's';
+    container.appendChild(creat)  
+    setTimeout(() => {
+        create.remove();
+    }, 3000);
+}
+
+setInterval(hearts, 1000);
+
+
+</script>
+</html>
