@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(rgb(255, 249, 249));
+}
+
+.head{
+    font-size: 40px;
+    color: rgb(255, 22, 111);
+    letter-spacing: 5px;
+}
+
+p{
+    width: 40%;
+    padding: 2%;
+    font-size: 20px;
+    color: #000;
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+
+.hearts{
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    animation: fall 3s ease-in infinite;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(250vh);
+    }
+}
